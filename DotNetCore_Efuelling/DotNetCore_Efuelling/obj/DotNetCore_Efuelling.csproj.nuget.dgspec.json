@@ -1,0 +1,82 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\PersonalDev\\DotNetCore_Development\\DotNetCore_Efuelling\\DotNetCore_Efuelling\\DotNetCore_Efuelling.csproj": {}
+  },
+  "projects": {
+    "C:\\PersonalDev\\DotNetCore_Development\\DotNetCore_Efuelling\\DotNetCore_Efuelling\\DotNetCore_Efuelling.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\PersonalDev\\DotNetCore_Development\\DotNetCore_Efuelling\\DotNetCore_Efuelling\\DotNetCore_Efuelling.csproj",
+        "projectName": "DotNetCore_Efuelling",
+        "projectPath": "C:\\PersonalDev\\DotNetCore_Development\\DotNetCore_Efuelling\\DotNetCore_Efuelling\\DotNetCore_Efuelling.csproj",
+        "packagesPath": "C:\\Users\\thomas.bedford\\.nuget\\packages\\",
+        "outputPath": "C:\\PersonalDev\\DotNetCore_Development\\DotNetCore_Efuelling\\DotNetCore_Efuelling\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\thomas.bedford\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\DevNuGet": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://edctfs01:8181/nuget": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnet.myget.org/F/aspnetcore-dev/api/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "IdentityServer3": {
+              "target": "Package",
+              "version": "[2.6.3, )"
+            },
+            "Microsoft.AspNet.Providers.Core": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
