@@ -1,45 +1,43 @@
 ﻿
-using IdentityServer3.Core.Services;
+using DotNetCore_Efuelling.Entities;
+using DotNetCore_Efuelling.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
-using System.Web.Providers.Entities;
 
 namespace DotNetCore_Efuelling.Controllers
 {
-    public class UserController : Controller
+    [Authorize]
+    [ApiController]
+    [Route("[controller]")]
+    public class UserController : ControllerBase
     {
-        [Authorize]
-        [Route("[controller]")]
-        public class UserControllers : ControllerBase
+        private IUserService _userService;
+
+        public UserController(IUserService userSevrice)
         {
-            private IUserService _userService;
+            _userService = userSevrice;
+        }
 
-            public UserControllers(IUserService userSevrice)
+        [AllowAnonymous]
+        [HttpPost("authenticate")]
+        public async Task<IActionResult> Authenticate([FromBody]User userparam)
+        {
+            var user = await _userService.Authenticate(userparam.UserName, userparam.Password);
+
+            if(user == null)
             {
-                _userService = userSevrice;
+                return BadRequest(new { massage = "Username or Password is incorrect!" });
             }
 
-            [AllowAnonymous]
-            [HttpPost("authenticate")]
-            public async Task<IActionResult> Authenticate([FromBody]User userparam)
-            {
-                var user = await _userService.Authenticate(userparam.UserName, userparam.Password);
+            return Ok(user);
+        }
 
-                if(user == null)
-                {
-                    return BadRequest(new { massage = "Username or Password is incorrect!" });
-                }
-
-                return Ok(user);
-            }
-
-            [HttpGet]
-            public async Task<IActionResult> GetAll()
-            {
-                var users = await _userService.GetAll();
-                return Ok(users);
-            }
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+            var users = await _userService.GetAll();
+            return Ok(users);
         }
     }
 }
