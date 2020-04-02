@@ -15,12 +15,7 @@ variables:
   buildConfiguration: 'Release'
 
 steps:
-- task: DownloadBuildArtifacts@0
-  inputs:
-    buildType: 'current'
-    downloadType: 'single'
-    downloadPath: '$(System.ArtifactsDirectory)'
-    artifactName: 'drop'
+
 - task: NuGetToolInstaller@1
 
 - task: NuGetCommand@2
@@ -38,6 +33,13 @@ steps:
   inputs:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+
+- task: DownloadBuildArtifacts@0
+  inputs:
+    buildType: 'current'
+    downloadType: 'single'
+    downloadPath: '$(System.ArtifactsDirectory)'
+    artifactName: 'drop'
 
 - task: PublishBuildArtifacts@1
   inputs:
