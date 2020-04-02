@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPDotNET_WebApplication", "ASPDotNET_WebApplication\ASPDotNET_WebApplication.csproj", "{5F85C3B2-472F-44D4-AE2F-96D00AF2AA76}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ASPDotNET_DomainDB", "ASPDotNET_DomainDB\ASPDotNET_DomainDB.sqlproj", "{B52D12D4-6CFC-4846-8CA5-823969250E81}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,12 @@ Global
 		{5F85C3B2-472F-44D4-AE2F-96D00AF2AA76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F85C3B2-472F-44D4-AE2F-96D00AF2AA76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F85C3B2-472F-44D4-AE2F-96D00AF2AA76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B52D12D4-6CFC-4846-8CA5-823969250E81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B52D12D4-6CFC-4846-8CA5-823969250E81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B52D12D4-6CFC-4846-8CA5-823969250E81}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B52D12D4-6CFC-4846-8CA5-823969250E81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B52D12D4-6CFC-4846-8CA5-823969250E81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B52D12D4-6CFC-4846-8CA5-823969250E81}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
