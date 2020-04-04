@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Portfolio_NetCore_BL\Portfolio_NetCore_BL.csproj" />
     <ProjectReference Include="..\Portfolio_NetCore_DAL\Portfolio_NetCore_DAL.csproj" />
   </ItemGroup>
 
