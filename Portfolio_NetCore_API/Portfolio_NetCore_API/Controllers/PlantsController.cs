@@ -28,7 +28,7 @@ namespace Portfolio_NetCore_API.Controllers
         }
 
         // GET: api/Plants/5 
-        [HttpGet("{Id}")]
+        [HttpGet("{id}")]
         public async Task<ActionResult<Plant>> GetPlant(int id)
         {
             var plant = await _context.Plants.FindAsync(id);
