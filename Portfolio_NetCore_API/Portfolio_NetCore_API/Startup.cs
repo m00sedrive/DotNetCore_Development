@@ -45,18 +45,17 @@ namespace Portfolio_NetCore_API
                 app.UseHsts();
             }
 
+            app.UseMvc();
             // Enable middleware to serve generated Swagger as a JSON endpoint.
             app.UseSwagger();
             // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), 
             // specifying the Swagger JSON endpoint.
             app.UseSwaggerUI(c =>
             {
-                c.RoutePrefix = string.Empty;
-                c.SwaggerEndpoint("./swagger/v1/swagger.json", "My API V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API");
             });
 
             app.UseHttpsRedirection();
-            app.UseMvc();
 
         }
     }
