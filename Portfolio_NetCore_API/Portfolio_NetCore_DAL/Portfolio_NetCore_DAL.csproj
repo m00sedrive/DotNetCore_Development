@@ -5,6 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20200404140456_Initial.cs" />
+    <Compile Remove="Migrations\20200404140456_Initial.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.2.0">
       <PrivateAssets>all</PrivateAssets>
@@ -17,6 +22,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Portfolio_NetCore_BL\Portfolio_NetCore_BL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
   </ItemGroup>
 
 </Project>
