@@ -13,8 +13,8 @@ namespace Portfolio_NetCore_API
             {
                 var plants = new List<Plant>()
                 {
-                    new Plant { /*Id = 1,*/ Name = "TestPlant1", Description = "Test Plant Description 1" },
-                    new Plant { /*Id = 2,*/ Name = "TestPlant2", Description = "Test Plant Description 2" }
+                    new Plant { /*Id = 1,*/ Name = "TestPlant1", Description = "Test Plant Description 1", SeasonId = 1, PlantTypeId = 1},
+                    new Plant { /*Id = 2,*/ Name = "TestPlant2", Description = "Test Plant Description 2", SeasonId = 2, PlantTypeId = 2}
                 };
                 context.Plants.AddRange(plants);
                 context.SaveChanges();

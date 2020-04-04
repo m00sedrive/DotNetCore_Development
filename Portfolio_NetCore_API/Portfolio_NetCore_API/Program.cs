@@ -12,7 +12,7 @@ namespace Portfolio_NetCore_API
         {
             var host = CreateWebHostBuilder(args).Build();
 
-            // insert test data on database migration  # for development purpose.... maybe!
+            // insert test data on database migration  # for development purpose....maybe!
             using (var scope = host.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
