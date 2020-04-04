@@ -20,7 +20,7 @@ namespace Portfolio_NetCore_DAL
         {
             IConfigurationRoot configuration = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile(@Directory.GetCurrentDirectory() + "/../MyCookingMaster.API/appsettings.json").Build();
             var builder = new DbContextOptionsBuilder<APIDomain_DbContext>();
-            var connectionString = configuration.GetConnectionString("DatabaseConnection");
+            var connectionString = configuration.GetConnectionString("ConnectionStrings");
             builder.UseSqlServer(connectionString);
             return new APIDomain_DbContext(builder.Options);
         }
