@@ -48,6 +48,11 @@ steps:
     ArtifactName: 'drop'
     publishLocation: Container
 
+- task: PublishPipelineArtifact@1
+  displayName: 'Publish Pipeline Artifact'
+  inputs:
+    artifact: 'drop'
+
 - task: DownloadBuildArtifacts@0
   inputs:
     buildType: 'current'
