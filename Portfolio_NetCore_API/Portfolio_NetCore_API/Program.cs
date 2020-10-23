@@ -19,7 +19,7 @@ namespace Portfolio_NetCore_API
                 try
                 {
                     var context = services.GetRequiredService<APIDomain_DbContext>();
-                    DataSeeder.Initialize(context);
+                    //DataSeeder.Initialize(context);
                 }
                 catch (Exception)
                 {
