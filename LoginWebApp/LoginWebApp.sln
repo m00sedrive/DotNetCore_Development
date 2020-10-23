@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29403.142
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginWebApp", "LoginWebApp\LoginWebApp.csproj", "{500FEBF6-AD8A-4AD6-9529-BD8058D5EE58}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoginWebApp", "LoginWebApp\LoginWebApp.csproj", "{B8CB9D76-000C-44CC-942B-B2B229408C67}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{500FEBF6-AD8A-4AD6-9529-BD8058D5EE58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{500FEBF6-AD8A-4AD6-9529-BD8058D5EE58}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{500FEBF6-AD8A-4AD6-9529-BD8058D5EE58}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{500FEBF6-AD8A-4AD6-9529-BD8058D5EE58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8CB9D76-000C-44CC-942B-B2B229408C67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8CB9D76-000C-44CC-942B-B2B229408C67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8CB9D76-000C-44CC-942B-B2B229408C67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8CB9D76-000C-44CC-942B-B2B229408C67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {07B6CA9C-DA74-4477-8768-BB7B2BE6E393}
+		SolutionGuid = {31119055-72F3-4FDC-8AE7-00053ACA1C97}
 	EndGlobalSection
 EndGlobal
